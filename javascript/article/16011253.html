@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>cxj10023|发扬互联网分享精神</title>
+	<link rel="stylesheet" href="../../style/normalize.css">
+	<link rel="stylesheet" href="../../style/type.css">
+	<!--[if IE]>
+	<script>
+	(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})()
+	</script>
+	<![endif]-->
+</head>
+<body>
+	<header>
+		<a href="../../index.html">
+			<img src="../../images/cxj10023_Logo.png" alt="cxj10023">
+		</a>
+		<ul>
+			<li><a href="">我的代码</a></li>
+		</ul>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="../../index.html">首页</a></li>
+			<li><a href="../../HTML+CSS/index.html">HTML+CSS</a></li>
+			<li class="active"><a href="../index.html">JavaScript</a></li>
+		</ul>
+	</nav>
+	<div id="wrap">
+		<div id="main">
+			<div id="container">
+				<article id="page">
+					<h2>
+						JS实现选项卡功能
+					</h2>
+					<p>更新：<time>2016-01-27</time></p>
+					<section>
+						<p style="color:#FB6666">如需转载请以明文链接形式注明出处</p>
+						<p>
+							下图的选项卡功能在网站中随处可见，今天就让我们来看一下如何用JS实现这种简单的选项卡功能。
+						</p>
+						<img src="http://i11.tietuku.com/1aaee1876ee9a574.jpg" height="249" width="299" alt="选项卡" style="margin:0 20px;">
+						<p>
+							我们先用HTML和CSS来完成基本的布局
+						</p>
+						<div class="code">
+							<xmp>
+<style>
+	#chooseTab div{
+	width:276px;
+	height:200px;
+	background:#DDD;
+	color:white;
+	display:none;
+}
+	#chooseTab input{
+	padding:3px 7px;
+	border:none;
+}
+	.active{
+	background:blue;
+	color:white;
+}
+</style>
+<body>
+<div id="chooseTab">
+	<input type="button" value="选项卡1" class="active" />
+	<input type="button" value="选项卡2" />
+	<input type="button" value="选项卡3" />
+	<input type="button" value="选项卡4" />
+	<div style="display:block">选项卡1</div>
+	<div>选项卡2</div>
+	<div>选项卡3</div>
+	<div>选项卡4</div>
+</div>
+</body>
+							</xmp>
+						</div><!-- code结束 -->
+						<p>
+							然后用JS来实现选项卡的功能
+						</p>
+						<div class="code">
+							<xmp>
+<script>
+	window.onload = function(){
+	var aBtn = document.getElementById('chooseTab').getElementsByTagName('input');
+	var aDiv = document.getElementById('chooseTab').getElementsByTagName('div');
+	for (var i = 0; i < aBtn.length; i++) {
+		aBtn[i].index = i;
+		aBtn[i].onclick = function(){
+			for (var i = 0; i < aBtn.length; i++) {
+					aBtn[i].className = "";
+					aDiv[i].style.display = "none";
+				};
+				this.className = "active";
+				aDiv[this.index].style.display = "block";
+			};
+		}
+	}
+</script>
+							</xmp>
+						</div><!-- code结束 -->
+						<p>
+							当然，这只是最简单的实现方法，ui设计得比较简洁，甚至可以说是简陋，但是麻雀虽小五脏俱全，其代码还是非常好用的。<br>
+							快来实现你自己的选项卡吧。
+						</p>
+					</section>
+					<div style="margin:25px;" class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+					<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"来自cxj10023的文章","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+					</script>
+				</article>
+			</div><!-- container结束 -->
+		</div><!-- main结束 -->
+		<aside>
+			
+		</aside>
+		<div id="comment">
+			<div class="ds-thread" data-thread-key="16011253" data-title="JS实现选项卡功能" data-url="http://www.cxj10023.com/javascript/article/16011253.html">
+			</div>
+				<script type="text/javascript">
+					var duoshuoQuery = {short_name:"cxj10023"};
+						(function() {
+							var ds = document.createElement('script');
+							ds.type = 'text/javascript';ds.async = true;
+							ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+							ds.charset = 'UTF-8';
+							(document.getElementsByTagName('head')[0] 
+							 || document.getElementsByTagName('body')[0]).appendChild(ds);
+						})();
+				</script>
+		</div><!-- comment结束 -->
+	</div>
+	<script type="text/javascript" src="../../js/JavaScript.js"></script>
+</body>
+</html>
+
+

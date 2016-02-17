@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>cxj10023|发扬互联网分享精神</title>
+	<link rel="stylesheet" href="../../style/normalize.css">
+	<link rel="stylesheet" href="../../style/type.css">
+	<!--[if IE]>
+	<script>
+	(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})()
+	</script>
+	<![endif]-->
+</head>
+<body>
+	<header>
+		<a href="../../index.html">
+			<img src="../../images/cxj10023_Logo.png" alt="cxj10023">
+		</a>
+		<ul>
+			<li><a href="">我的代码</a></li>
+		</ul>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="../../index.html">首页</a></li>
+			<li class="active"><a href="../index.html">HTML+CSS</a></li>
+			<li><a href="../../javascript/index.html">JavaScript</a></li>
+		</ul>
+	</nav>
+	<div id="wrap">
+		<div id="main">
+			<div id="container">
+				<article id="page">
+					<h2>
+						block（块级元素）和 inline（内联元素） 的区别
+					</h2>
+					<p>更新：<time>2016-01-25</time></p>
+					<section>
+						<h3>
+							块元素(block element)
+						</h3>
+						<p>
+							块元素又名块级元素(block element)，和其对应的是内联元素(inline element)，都是html规范中的概念。块元素和内联元素的基本差异是块元素一般都从新行开始，相邻的块级元素将会在不同行显示。而当加入了css控制以后，块元素和内联元素的这种属性差异就不成为差异了。比如，我们完全可以把内联元素加上display:block这样的属性，让它也有每次都从新行开始的属性，即成为块元素同样我们可以把块元素加上display:inline这样的属性，让它也在一行上排列。
+						</p>
+						<h4>
+							特点
+						</h4>
+						<ol>
+							<li>总是在新行上开始；</li>
+							<li>高度，行高以及外边距和内边距都可控制；</li>
+							<li>宽度缺省是它的容器的100%，除非设定一个宽度。</li>
+							<li>它可以容纳内联元素和其他块元素</li>
+						</ol>
+						<h4>举例</h4>
+						<p>
+							address - 地址<br>
+							blockquote - 块引用<br>
+							center - 举中对齐块<br>
+							dir - 目录列表<br>
+							div - 常用块级容易，也是css <br>layout的主要标签<br>
+							dl - 定义列表<br>
+							fieldset - form控制组<br>
+							form - 交互表单<br>
+							h1 - 大标题<br>
+							h2 - 副标题<br>
+							h3 - 3级标题<br>
+							h4 - 4级标题<br>
+							h5 - 5级标题<br>
+							h6 - 6级标题<br>
+							hr - 水平分隔线<br>
+							isindex - input prompt<br>
+							menu - 菜单列表<br>
+							noframes - frames可选内容，（对于不支持frame的浏览器显示此区块内容<br>
+							noscript - ）可选脚本内容（对于不支持script的浏览器显示此内容）<br>
+							ol - 排序表单<br>
+							p - 段落<br>
+							pre - 格式化文本<br>
+							table - 表格<br>
+							ul - 非排序列表<br>
+						</p>
+						<h3>内联元素(inline element)</h3>
+						<p>
+							内联元素又名行内元素(inline element)，和其对应的是块元素(block element)，都是html规范中的概念。内联元素的显示，为了帮助理解，可以形象的称为“文本模式”，即一个挨着一个，都在同一行按从左至右的顺序 显示，不单独占一行。而当加入了css控制以后，块元素和内联元素的这种属性差异就不成为差异了。比如，我们完全可以把内联元素加上display:block这样的属性，让它也有每次都从新行开始的属性，即成为块元素同样我们可以把块元素加上display:inline这样的属性，让它也在一行上排列。
+						</p>
+						<h4>特点</h4>
+						<ol>
+							<li>和其他元素都在一行上；</li>
+							<li>高度、行高和顶以及底边距都不可改变；</li>
+							<li>宽度就是它的文字或图片的宽度，不可改变。</li>
+							<li>总的来说，内联元素一般都是基于语义级(semantic)的基本元素，它只能容纳文本或者其他内联元素，通常被包括在块元素中使用，常见内联元素有“a、b、br”等。</li>
+						</ol>
+						<h4>举例</h4>
+						<p>
+							a - 锚点
+							<br>abbr - 缩写
+							<br>acronym - 首字
+							<br>b - 粗体(不推荐)
+							<br>bdo - bidi override
+							<br>big - 大字体
+							<br>br - 换行
+							<br>cite - 引用
+							<br>code - 计算机代码(在引用源码的时候需要)
+							<br>dfn - 定义字段
+							<br>em - 强调
+							<br>font - 字体设定(不推荐)
+							<br>i - 斜体
+							<br>img - 图片
+							<br>input - 输入框
+							<br>kbd - 定义键盘文本
+							<br>label - 表格标签
+							<br>q - 短引用
+							<br>s - 中划线(不推荐)
+							<br>samp - 定义范例计算机代码
+							<br>select - 项目选择
+							<br>small - 小字体文本
+							<br>span - 常用内联容器，定义文本内区块
+							<br>strike - 中划线
+							<br>strong - 粗体强调
+							<br>sub - 下标
+							<br>sup - 上标
+							<br>textarea - 多行文本输入框
+							<br>tt - 电传文本
+							<br>u - 下划线
+							<br>var - 定义变量
+						</p>
+						<h3>可变元素</h3>
+						<p>
+							可变元素为根据上下文语境决定该元素为块元素或者内联元素。
+						</p>
+						<h4>举例</h4>
+						<p>
+							applet - java applet
+							<br>button - 按钮
+							<br>del - 删除文本
+							<br>iframe - inline frame
+							<br>ins - 插入的文本
+							<br>map - 图片区块(map)
+							<br>object - object对象
+							<br>script - 客户端脚本
+						</p>
+					</section>
+
+					<div style="margin:25px;" class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+					<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"来自cxj10023的文章","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+					</script>
+				</article>
+			</div><!-- container结束 -->
+		</div><!-- main结束 -->
+		<aside>
+			
+		</aside>
+		<div id="comment">
+			<div class="ds-thread" data-thread-key="16011153" data-title="block（块级元素）和 inline（内联元素） 的区别" data-url="http://www.cxj10023.com/HTML+CSS/article/16011153.html"></div>
+					<script type="text/javascript">
+					var duoshuoQuery = {short_name:"cxj10023"};
+						(function() {
+							var ds = document.createElement('script');
+							ds.type = 'text/javascript';ds.async = true;
+							ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+							ds.charset = 'UTF-8';
+							(document.getElementsByTagName('head')[0] 
+							 || document.getElementsByTagName('body')[0]).appendChild(ds);
+						})();
+					</script>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="../../js/JavaScript.js"></script>
+</body>
+</html>
